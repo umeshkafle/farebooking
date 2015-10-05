@@ -1,0 +1,23 @@
+<%= form_for :fare, url:{action: 'create'} do |f|%>
+	<p>
+		<%= f.label :Destination%>
+		<%= f.text_field :destination%>
+	<p>
+	<p>
+		<%= f.label :From%>
+		<%= f.text_field :from%>
+	<p>
+	<p>
+		<%= f.label :time%>
+		<%= f.text_field :destination%>
+	<p>
+	<p>
+		<%= f.label :Time%>
+		<%= f.datetime_select :time%>
+	<p>
+	<p>
+		<%= f.label :Price%>
+		<%= f.text_field :price%>
+	<p>
+	<%= submit_tag('Add Fare')%>
+<%end%>

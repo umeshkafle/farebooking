@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_of_passenger: MyString
+  no_of_travellers: 1
+  no_of_child: 1
+  time_of_travel: 2015-10-05 16:27:53
+
+two:
+  name_of_passenger: MyString
+  no_of_travellers: 1
+  no_of_child: 1
+  time_of_travel: 2015-10-05 16:27:53

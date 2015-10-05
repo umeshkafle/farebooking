@@ -1,0 +1,24 @@
+	<table class=table table-stripped.table-hover>
+		<thead>
+			<tr>
+				<th>Destination</th>
+				<th>From</th>
+				<th>Time</th>
+				<th>Price</th>
+				<th colspan ='3'></th>
+			</tr>
+		</thead>
+		<tbody>
+			<% @fares.each do |fare|%>
+			<tr>
+				<td><%= fare.destination%></td>
+				<td><%= fare.from%></td>
+				<td><%= fare.time%></td>
+				<td><%= fare.price%></td>
+				<td><%= link_to 'Book Ticket', new_fare_booking_path(fare.id)%>
+			</tr>
+			<%end%>
+		</tbody>
+	</table>
+
+<%= link_to 'New Fare', new_fare_path %>
