@@ -1,3 +1,13 @@
+<ul class="nav nav-pills">
+<li><%=form_for :search, url:("/search") do |f|%>
+	<%= f.text_field :destination%> <%= submit_tag ("Search")%>
+<%end%></li>
+
+<li role="presentation" class="active"><%= link_to 'New Fare', new_fare_path %></li></ul>	
+
+
+
+
 	<table class=table table-stripped.table-hover>
 		<thead>
 			<tr>
@@ -21,4 +31,3 @@
 		</tbody>
 	</table>
 
-<%= link_to 'New Fare', new_fare_path %>
